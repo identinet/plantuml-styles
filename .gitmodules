@@ -1,0 +1,3 @@
+[submodule "c4"]
+	path = c4
+	url = https://github.com/RicardoNiepel/C4-PlantUML.git

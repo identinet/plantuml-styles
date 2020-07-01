@@ -1,0 +1,14 @@
+@startuml
+!include styles/c4/C4_Container.puml
+
+/' More details at https://github.com/RicardoNiepel/C4-PlantUML '/
+
+title C4 Architecture Diagram
+
+Person(personAlias, "Label", "Optional Description")
+Container(containerAlias, "Label", "Technology", "Optional Description")
+System(systemAlias, "Label", "Optional Description")
+
+Rel(personAlias, containerAlias, "Label", "Optional Technology")
+
+@enduml

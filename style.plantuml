@@ -1,0 +1,141 @@
+' @startuml
+
+/' increase the size of the output image '/
+scale 2
+
+/' TITLE and TITLE_NOD macro definition that will attach the current date to the title'/
+!define TITLE_NOD(t) title t
+!ifdef DATE
+!define TITLE(t) title t, DATE
+!else
+!define TITLE(t) title t
+!endif
+
+skinparam componentStyle uml2
+
+skinparam ActivityDiamond {
+    BorderColor #004f91
+    BackgroundColor #ffffff
+    BarColor #039BE5
+}
+
+skinparam Activity {
+    BorderColor #004f91
+    BackgroundColor #ffffff
+    BarColor #039BE5
+}
+
+skinparam Actor {
+    BorderColor #004f91
+    BackgroundColor #ffffff
+}
+
+skinparam Arrow {
+    Color #039BE5
+}
+
+skinparam Package {
+    BorderColor #004f91
+    BackgroundColor #ffffff
+}
+
+skinparam Frame {
+    BorderColor #004f91
+    BackgroundColor #ffffff
+}
+
+skinparam Cloud {
+    BorderColor #004f91
+    BackgroundColor #ffffff
+}
+
+skinparam Node {
+    BorderColor #004f91
+    BackgroundColor #ffffff
+}
+
+skinparam Folder {
+    BorderColor #004f91
+    BackgroundColor #ffffff
+}
+
+skinparam Database {
+    BorderColor #004f91
+    BackgroundColor #ffffff
+}
+
+skinparam Default {
+    FontName Arcon
+    /' FontColor '/
+    /' FontSize '/
+    /' FontStyle '/
+    /' MonospacedFontName Hack '/
+}
+
+skinparam Participant {
+    BorderColor #004f91
+    BackgroundColor #ffffff
+}
+
+skinparam SequenceParticipant {
+    BorderColor #004f91
+    BackgroundColor #ffffff
+}
+
+skinparam SequenceActor {
+    BorderColor #004f91
+    BackgroundColor #ffffff
+}
+
+skinparam SequenceLife {
+    /' LineBackgroundColor '/
+    LineBorderColor #039BE5
+    /' LineBorderThickness '/
+}
+
+skinparam SequenceGroup {
+    BorderColor #004f91
+    BackgroundColor #ffffff
+}
+
+skinparam SequenceParticipant {
+    BorderColor #004f91
+    BackgroundColor #ffffff
+}
+
+skinparam Usecase {
+    BorderColor #004f91
+    BackgroundColor #ffffff
+}
+
+skinparam Object {
+    BackgroundColor #ffffff
+    BorderColor #004f91
+}
+
+skinparam Component {
+    BackgroundColor #ffffff
+    BorderColor #004f91
+}
+
+skinparam Rectangle {
+    BackgroundColor #ffffff
+    BorderColor #004f91
+}
+
+/' skinparam Interface { '/
+/'     BackgroundColor #ffffff '/
+/'     BorderColor #004f91 '/
+/' } '/
+
+skinparam Class {
+    BackgroundColor #ffffff
+    BorderColor #004f91
+}
+
+skinparam Enum {
+    BackgroundColor #ffffff
+    BorderColor #004f91
+}
+
+/' @enduml '/

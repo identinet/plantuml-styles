@@ -1,0 +1,62 @@
+@startuml container-tracking-sequence
+!include styles/style.plantuml
+
+/' More details at: https://crashedmind.github.io/PlantUMLHitchhikersGuide/index.html '/
+
+title Ablauf des Container Trackings
+
+actor Lieferant as s
+participant Panalpina as t
+participant Container as c
+actor Kunde as e
+
+e -> s: Bestellung aufgeben und festlegen des Temperaturfensters für den Versand
+s -> t: Versand beauftragen
+s -> t: Ware abgeben
+t -> t: Warenannahme bestätigen
+t -> c: Ware in Container laden
+activate c
+c -> c: Sensoren überwachen\nTemperatur und Öffnung
+c --> e: Benachrichtigung bei\nGrenzwertüberschreitung
+t --> t: Transport
+c -> c: Sensoren überwachen\nTemperatur und Öffnung
+t -> e: Container zustellen
+deactivate c
+e -> s: Warenannahme bestätigen
+@enduml
+
+
+@startuml container-tracking-activity
+!include styles/style.plantuml
+
+title Aktionen auf der Blockchain
+
+start
+-[#4387a9]-> Bestellung
+aufgeben;
+:Smart Contract
+initialisiert]
+
+-[#4387a9]-> Versand
+beauftragen;
+:Transporteur
+ausgewählt]
+
+-[#4387a9]-> Paketannahme
+bestätigen;
+:Paketcode
+registiert]
+
+-[#4387a9]->
+:..Transport..]
+
+-[#4387a9]-> Zusteller scannt
+NFC-Tag an Klingel;
+:Zusteller
+vor Ort]
+
+-[#4387a9]-> Paket abgeben;
+:Paketannahme
+bestätigt]
+end
+@enduml
