@@ -89,7 +89,7 @@ skinparam SequenceActor {
 
 skinparam SequenceLife {
     /' LineBackgroundColor '/
-    LineBorderColor #039BE5
+    LineBorderColor #004f91
     /' LineBorderThickness '/
 }
 
