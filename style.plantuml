@@ -138,4 +138,9 @@ skinparam Enum {
     BorderColor #004f91
 }
 
+skinparam Queue {
+    BorderColor #004f91
+    BackgroundColor #ffffff
+}
+
 /' @enduml '/
