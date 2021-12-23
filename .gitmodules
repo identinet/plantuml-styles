@@ -1,3 +1,6 @@
 [submodule "c4"]
 	path = c4
 	url = https://github.com/RicardoNiepel/C4-PlantUML.git
+[submodule "sprites"]
+	path = sprites
+	url = https://github.com/tupadr3/plantuml-icon-font-sprites.git
