@@ -143,4 +143,9 @@ skinparam Queue {
     BackgroundColor #ffffff
 }
 
+skinparam Control {
+    BorderColor #004f91
+    BackgroundColor #ffffff
+}
+
 /' @enduml '/
