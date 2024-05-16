@@ -59,4 +59,3 @@ update: githooks
 
 # Run tests
 test:
-    "pass"
