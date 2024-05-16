@@ -1,4 +1,5 @@
 ' @startuml
+stdlib /' include the standard lib https://plantuml.com/stdlib '/
 
 /' increase the size of the output image '/
 scale 2
