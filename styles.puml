@@ -1,6 +1,3 @@
-' @startuml
-stdlib /' include the standard lib https://plantuml.com/stdlib '/
-
 /' increase the size of the output image '/
 scale 2
 
@@ -148,5 +145,3 @@ skinparam Control {
     BorderColor #004f91
     BackgroundColor #ffffff
 }
-
-/' @enduml '/
