@@ -5,12 +5,25 @@ This repository contains the identinet plantuml styles.
 ## Installation
 
 - Install [plantuml](https://plantuml.com)
-- Clone this repository into your current directory
-  - `git clone git@github.com:identinet/plantuml-styles.git styles`
-  - or as a submodule in a git repository
-    `git submodule add https://github.com/identinet/plantuml-styles.git styles`
-- Install submodules: `git submodule update --init --recursive`
-- [Editor integration](https://plantuml.com/starting)
+- Use URL reference (slower build times):
+
+```
+@startuml
+
+!define identinet https://raw.githubusercontent.com/identinet/plantuml-styles
+!include identinet/styles.puml
+...
+
+@enduml
+```
+
+- Use git submodules (faster build times, but git submodules):
+  - Clone this repository into your current directory
+    - `git clone git@github.com:identinet/plantuml-styles.git styles`
+    - or as a submodule in a git repository
+      `git submodule add https://github.com/identinet/plantuml-styles.git styles`
+  - Install submodules: `git submodule update --init --recursive`
+- Integrate with your [IDE](https://plantuml.com/starting)
 
 ## PlantUML Documentation
 
