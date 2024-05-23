@@ -11,6 +11,17 @@ scale 2
 
 skinparam componentStyle uml2
 
+skinparam Default {
+    FontName "Open Sans"
+    /' FontColor '/
+    /' FontSize '/
+    /' FontStyle '/
+   MonospacedFontName "JetBrains Mono"
+   /' Not sure how to set text alignment to not justify text '/
+   ' sequenceMessageAlign left
+   ' sequenceReferenceAlign left
+}
+
 skinparam ActivityDiamond {
     BorderColor #004f91
     BackgroundColor #ffffff
@@ -60,14 +71,6 @@ skinparam Folder {
 skinparam Database {
     BorderColor #004f91
     BackgroundColor #ffffff
-}
-
-skinparam Default {
-    FontName Arcon
-    /' FontColor '/
-    /' FontSize '/
-    /' FontStyle '/
-    /' MonospacedFontName Hack '/
 }
 
 skinparam Participant {
