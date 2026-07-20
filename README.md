@@ -21,7 +21,7 @@ This repository contains the identinet plantuml styles.
   - Clone this repository into your current directory
     - `git clone git@github.com:identinet/plantuml-styles.git styles`
     - or as a submodule in a git repository
-      `git submodule add https://github.com/identinet/plantuml-styles.git styles`
+      `git submodule add -b main https://github.com/identinet/plantuml-styles.git styles`
   - Install submodules: `git submodule update --init --recursive`
 - Integrate with your [IDE](https://plantuml.com/starting)
 
